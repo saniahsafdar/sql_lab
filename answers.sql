@@ -60,7 +60,7 @@ JOIN products ON order_details.product_id = products.product_id
 WHERE products.discontinued = 1;
 
 -- 17. Get first names of all employees who report to no one.
-SELECT first_name FROM employees WHERE reports_to IS NULL;
+SELECT first_name FROM employees WHERE reports_to IS NULL
 
 -- 18. Get first names of all employees who report to Andrew.
 SELECT subordinate.first_name FROM employees AS subordinate JOIN employees as manager ON subordinate.reports_to = manager.employee_id;
